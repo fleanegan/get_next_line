@@ -20,7 +20,7 @@ ILIBFT				= libft.a
 CFLAGS				= -Wall -Wextra -Werror
 
 ${NAME}:			$(TARGET_NAME) $(SRCS) $(TEST_HEADERS) $(TEST_SOURCES)
-					@echo TEST ${CC} ${CFLAGS} -o $(NAME) $(SRCS) $(TEST_SOURCES) $(ICRITERION) $(ILIBFT)
+					${CC} ${CFLAGS} -o $(NAME) $(SRCS) $(TEST_SOURCES) $(ICRITERION) $(ILIBFT)
 
 # defines "own_source", which allows for including tests specific to your code with #ifndef
 test_own:			$(TARGET_NAME) $(SRCS) $(TEST_HEADERS) $(TEST_SOURCES)

@@ -19,6 +19,9 @@
 # ifdef own_source
 #  define BUFFER_SIZE 2
 # endif
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 2
+# endif
 
 # include <stdlib.h>
 # include <fcntl.h>
